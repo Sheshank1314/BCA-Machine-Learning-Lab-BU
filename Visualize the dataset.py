@@ -1,8 +1,26 @@
+Step 1: Create the CSV File:
+Create a CSV file with below data of student study hours and exam scores: Save this file as study_data.csv.
+Student ID   Study Hours   Exam Scores
+1            5             82
+2            2             48
+3            8             90
+4            1             35
+5            3             50
+6            4             66
+7            9             95
+8            6             75
+9            7             88
+10           0.5           30
+11           10            96
+12           0             20
+13           12            98 
+
+Step 2: Python Code:
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data
-data = pd.read_csv('C:\\Users\\shesh\\CAREER\\SBAB\\BCA 3RD YEAR\\BCA 6TH SEM\\Lab Programs\\ML_Programs\\study_data.csv')
+data = pd.read_csv('C:\\Users\\User\\ML_Programs\\study_data.csv')
 data.columns = data.columns.str.strip()
 print(data.columns)
 
